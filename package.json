@@ -1,0 +1,17 @@
+{
+  "name": "nuxt3-docs-zh",
+  "version": "0.0.1",
+  "description": "nuxt3中文文档",
+  "main": "index.js",
+  "repository": "http://github.com/57code/nuxt3-docs-zh",
+  "author": "57code",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^0.20.1"
+  }
+}
