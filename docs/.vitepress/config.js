@@ -7,7 +7,8 @@ module.exports = {
         text: "使用",
         link: "/",
         children: [
-          { text: "数据获取", link: "/usage/data-fetching" }
+          { text: "数据获取", link: "/usage/data-fetching" },
+          { text: "运行时配置", link: "/usage/runtime-config" },
         ],
       },
     ],
