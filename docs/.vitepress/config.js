@@ -10,6 +10,7 @@ module.exports = {
         children: [
           { text: "数据获取", link: "/usage/data-fetching" },
           { text: "运行时配置", link: "/usage/runtime-config" },
+          { text: "Cookies", link: "/usage/cookies" },
         ],
       },
       {
