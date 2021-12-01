@@ -11,7 +11,7 @@ deploy:
   local_dir: docs/.vitepress/dist
   # A token generated on GitHub allowing Travis to push code on you repository.
   # Set in the Travis settings page of your repository, as a secure variable.
-  github_token: $GITHUB_TOKEN
+  github_token: $PRIVATE_KEY
   keep_history: true
   on:
     branch: master
