@@ -21,6 +21,7 @@ module.exports = {
           { text: "app.vue", link: "/directory-structure/app-vue" },
           { text: "composables", link: "/directory-structure/composables" },
           { text: "components", link: "/directory-structure/components" },
+          { text: "layouts", link: "/directory-structure/layouts" },
           { text: "pages", link: "/directory-structure/pages" },
           { text: "plugins", link: "/directory-structure/plugins" },
           { text: "gitignore", link: "/directory-structure/gitignore" },
