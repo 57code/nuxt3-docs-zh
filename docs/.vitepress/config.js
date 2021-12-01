@@ -10,7 +10,7 @@ module.exports = {
         children: [
           { text: "数据获取", link: "/usage/data-fetching" },
           { text: "运行时配置", link: "/usage/runtime-config" },
-          { text: "NuxtApp", link: "/usage/NuxtApp" },
+          { text: "NuxtApp", link: "/usage/nuxt-app" },
           { text: "Cookies", link: "/usage/cookies" },
         ],
       },
@@ -18,9 +18,11 @@ module.exports = {
         text: "目录结构",
         link: "/directory-structure",
         children: [
-          { text: "入口组件", link: "/directory-structure/app-vue" },
-          { text: "Composables", link: "/directory-structure/Composables" },
+          { text: "app.vue", link: "/directory-structure/app-vue" },
+          { text: "composables", link: "/directory-structure/composables" },
+          { text: "components", link: "/directory-structure/components" },
           { text: "pages", link: "/directory-structure/pages" },
+          { text: "plugins", link: "/directory-structure/plugins" },
           { text: "gitignore", link: "/directory-structure/gitignore" },
           { text: "tsconfig.json", link: "/directory-structure/tsconfig" },
         ],
