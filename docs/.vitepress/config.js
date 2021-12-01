@@ -1,7 +1,7 @@
 module.exports = {
   title: "Nuxt3中文文档",
   description: "由Nuxt3对赌学习群产出的中文文档",
-  base: '/',
+  base: "/",
   themeConfig: {
     sidebar: [
       {
@@ -18,9 +18,10 @@ module.exports = {
         children: [
           { text: "入口组件", link: "/directory-structure/app-vue" },
 					{ text: "NuxtApp", link: "/directory-structure/NuxtApp" },
-					{ text: "pages", link: "/directory-structure/pages" }	
+					{ text: "pages", link: "/directory-structure/pages" },
+          { text: "tsconfig.json", link: "/directory-structure/tsconfig" },
         ],
       },
     ],
   },
-};
+}
