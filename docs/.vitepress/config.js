@@ -17,7 +17,8 @@ module.exports = {
         link: "/directory-structure",
         children: [
           { text: "入口组件", link: "/directory-structure/app-vue" },
-          { text: "NuxtApp", link: "/directory-structure/NuxtApp" }
+          { text: "NuxtApp", link: "/directory-structure/NuxtApp" },
+          { text: "Composables", link: "/directory-structure/Composables" },
         ],
       },
     ],
