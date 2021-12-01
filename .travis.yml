@@ -14,4 +14,4 @@ deploy:
   github_token: $PRIVATE_KEY
   keep_history: true
   on:
-    branch: master
+    branch: gh-pages
