@@ -11,6 +11,13 @@ module.exports = {
           { text: "运行时配置", link: "/usage/runtime-config" },
         ],
       },
+      {
+        text: "目录结构",
+        link: "/directory-structure",
+        children: [
+          { text: "入口组件", link: "/directory-structure/app-vue" },
+        ],
+      },
     ],
   },
 };
