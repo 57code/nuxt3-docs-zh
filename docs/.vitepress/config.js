@@ -9,14 +9,13 @@ module.exports = {
         children: [
           { text: "数据获取", link: "/usage/data-fetching" },
           { text: "运行时配置", link: "/usage/runtime-config" },
-          { text: "运行时配置", link: "/usage/runtime-config" },
         ],
       },
       {
         text: "目录结构",
-        link: "/",
+        link: "/directory-structure",
         children: [
-          { text: "入口组件", link: "/directory-structure/app.vue" },
+          { text: "入口组件", link: "/directory-structure/app-vue" },
         ],
       },
     ],
