@@ -20,14 +20,6 @@ module.exports = {
           { text: "NuxtApp", link: "/directory-structure/NuxtApp" }
         ],
       },
-      {
-        text: "部署",
-        link: "/deployment",
-        children: [
-          { text: "Azure", link: "/deployment/azure" },
-          { text: "PM2", link: "/deployment/pm2" }
-        ],
-      },
     ],
   },
 };
