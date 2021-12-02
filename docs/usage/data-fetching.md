@@ -4,10 +4,10 @@
 
 `Nuxt3`提供了4种方式使得你可以在服务器端异步获取数据
 
-	1. useAsyncData
-	1. useLazyAsyncData （useAsyncData+lazy:true）
-	1. useFetch
-	1. useLazyFetch （useFetch+lazy:true）
+- useAsyncData
+- useLazyAsyncData （useAsyncData+lazy:true）
+- useFetch
+- useLazyFetch （useFetch+lazy:true）
 
 > 注意：他们只能在**`setup`**或者是`生命周期钩子`中使用
 
@@ -122,7 +122,7 @@ const { data } = await useFetch('/api/count')
 }
 ```
 
-```js
+```vue
 // 组件中只使用到了title和description，useFetch使用option的pick参数来指定key
 <script setup>
 const { data: mountain } = await useFetch('/api/mountains/everest', { pick: ['title', 'description'] })
@@ -135,15 +135,17 @@ const { data: mountain } = await useFetch('/api/mountains/everest', { pick: ['ti
 ```
 
 
-
 ### 使用async setup
 
 受Vue3的影响，如果你使用了`async setup()`的形式，当前组件的实例会在第一个异步操作之后丢失。如果你想要使用多个异步操作，比如执行多个useFetch，你需要使用`<script setup>`或者将多个请求封装在一起请求（使用Promise.all将多个请求装在一起）。
 
-**我们强烈建议使用<script setup>形式，它解决了采用[顶层await](https://v3.cn.vuejs.org/api/sfc-script-setup.html#%E4%B8%8E%E6%99%AE%E9%80%9A%E7%9A%84-script-%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8)的限制**
 
-```js
+**我们强烈建议使用`<script setup>`形式，它解决了采用[顶层await](https://v3.cn.vuejs.org/api/sfc-script-setup.html#%E9%A1%B6%E5%B1%82-await)的限制**
+
+
+```vue
 <script>
+
 export default defineComponent({
   async setup() {
     const [{ data: organization }, { data: repos }] = await Promise.all([
@@ -166,4 +168,3 @@ export default defineComponent({
   </header>
 </template>
 ```
-
