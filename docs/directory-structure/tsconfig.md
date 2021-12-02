@@ -1,6 +1,6 @@
 # TS 配置文件 [TypeScript configuration file](https://v3.nuxtjs.org/docs/directory-structure/tsconfig)
 
-Nuxt [自动生成](/concepts/typescript) 一个 `.nuxt/tsconfig.json` 文件，其中包含您在 Nuxt 项目中使用的解析别名，以及其他合理的默认值。 您可以通过在项目的根目录中创建一个包含以下内容的 `tsconfig.json` 来从中受益：
+Nuxt [自动生成](https://v3.nuxtjs.org/concepts/typescript) 一个 `.nuxt/tsconfig.json` 文件，其中包含您在 Nuxt 项目中使用的解析别名，以及其他合理的默认值。 您可以通过在项目的根目录中创建一个包含以下内容的 `tsconfig.json` 来从中受益：
 
 ```json
 {
