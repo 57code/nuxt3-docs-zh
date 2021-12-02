@@ -1,0 +1,35 @@
+# GitAction 名称
+name: Build Docs and Deploy
+
+# 此CI/CD触发时的事件 push:在代码提交时自动触发
+on:
+  push:
+    branches:
+      - master
+
+# 一个 CI/CD 的工作流有许多 jobs 组成，比如最典型的 job 是 lint，test，build等，这里起名 build-and-deploy
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # 运行workflow的服务器系统：ubuntu最新版本
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+
+      - name: Set node version to 16 🛠️
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: "yarn"
+
+      - name: Install deps 📦
+        run: yarn install
+
+      - name: Build 🛠️
+        run: yarn run docs:build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          BRANCH: gh-pages
+          FOLDER: docs/.vitepress/dist
