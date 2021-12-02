@@ -46,31 +46,31 @@ nuxtApp具有以下属性:
 
 ``` ts
 const nuxtApp = {
-vueApp, // 全局Vue应用: https://v3.vuejs.org/api/application-api.html
+  vueApp, // 全局Vue应用: https://v3.vuejs.org/api/application-api.html
 
-// 这些是供开发者调用，并添加运行时NuxtApp实例上的钩子
-// https://github.com/nuxt/framework/blob/main/packages/nuxt3/src/app/nuxt.ts#L18
-hooks,
-hook,
-callHook,
+  // 这些是供开发者调用，并添加运行时NuxtApp实例上的钩子
+  // https://github.com/nuxt/framework/blob/main/packages/nuxt3/src/app/nuxt.ts#L18
+  hooks,
+  hook,
+  callHook,
 
-// 仅在服务端使用
-ssrContext: {
-url,
-req,
-res,
-runtimeConfig,
-noSSR,
-},
+  // 仅在服务端使用
+  ssrContext: {
+    url,
+    req,
+    res,
+    runtimeConfig,
+    noSSR,
+  },
 
-// 在从服务端传递到客户端时，这将会被序列化
-payload: {
-serverRendered: true,
-data: {},
-state: {}
-}
+  // 在从服务端传递到客户端时，这将会被序列化
+  payload: {
+    serverRendered: true,
+    data: {},
+    state: {}
+  }
 
-provide: (name: string, value: any) => void
+  provide: (name: string, value: any) => void
 }
 ```
 
