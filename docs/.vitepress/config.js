@@ -9,6 +9,7 @@ module.exports = {
         link: "/",
         children: [
           { text: "数据获取", link: "/usage/data-fetching" },
+          { text: 'State', link: "/usage/state" },
           { text: "运行时配置", link: "/usage/runtime-config" },
           { text: "NuxtApp", link: "/usage/nuxt-app" },
           { text: "Cookies", link: "/usage/cookies" },
