@@ -16,7 +16,7 @@ Nuxt 会自动导入 `components/` 目录下任何组件 (以及你可能正在�
 --| TheFooter.vue
 ```
 
-```html{}[layouts/default.vue]
+``` vue
 <template>
   <div>
     <TheHeader />
@@ -39,7 +39,7 @@ Nuxt 会自动导入 `components/` 目录下任何组件 (以及你可能正在�
 
 ... 然后组件的名称将基于自己的路径和文件名，并删除重复的段 (比如： an/an/Button.vue 注册名将会是 AnButton)。因此组件名会是：
 
-```html
+```vue
 <BaseFooButton />
 ```
 
@@ -51,7 +51,7 @@ Nuxt 会自动导入 `components/` 目录下任何组件 (以及你可能正在�
 
 要动态导入一个组件 (也称为懒加载一个组件) 只需要在原组件名前加上 `Lazy` 前缀.
 
-```html{}[layouts/default.vue]
+```vue
 <template>
   <div>
     <TheHeader />
@@ -63,7 +63,7 @@ Nuxt 会自动导入 `components/` 目录下任何组件 (以及你可能正在�
 
 当该组件不是总被需要，这一点特别重要。通过使用 `Lazy` 前缀，你可以在合适的时机，延迟加载组件代码，这有助于优化你的 JavaScript 包大小。
 
-```html{}[pages/index.vue]
+```vue
 <template>
   <div>
     <h1>Mountains</h1>
@@ -87,7 +87,7 @@ export default {
 
 Nuxt 提供了 `<ClientOnly>` 组件，是专门在客户端渲染组件的组件。只在客户端导入组件或在客户端插件中注册该组件。
 
-```html{}[pages/example.vue]
+```vue
 <template>
   <div>
     <Sidebar />
@@ -102,7 +102,7 @@ Nuxt 提供了 `<ClientOnly>` 组件，是专门在客户端渲染组件的组�
 
 使用一个插槽，如： fallback ，直到 `<ClientOnly>` 组件在客户端挂载。
 
-```html{}[pages/example.vue]
+```vue
 <template>
   <div>
     <Sidebar />

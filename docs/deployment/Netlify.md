@@ -1,4 +1,4 @@
-# PM2
+# Netlify
 
 如何将 Nuxt 部署到 Netlify 服务。
 
