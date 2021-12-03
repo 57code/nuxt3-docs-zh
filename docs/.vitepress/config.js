@@ -33,7 +33,8 @@ module.exports = {
         link: "/deployment",
         children: [
           { text: "Azure", link: "/deployment/azure" },
-          { text: "PM2", link: "/deployment/pm2" }
+          { text: "PM2", link: "/deployment/pm2" },
+          { text: "Netlify", link: "/deployment/Netlify" }
         ],
       },
     ],
