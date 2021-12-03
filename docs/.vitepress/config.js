@@ -5,6 +5,13 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
+        text: "快速入门",
+        link: "/getting-started",
+        children: [
+          { text: "安装", link: "/getting-started/installation" },
+        ],
+      },
+      {
         text: "使用",
         link: "/",
         children: [
@@ -26,6 +33,7 @@ module.exports = {
           { text: "pages", link: "/directory-structure/pages" },
           { text: "plugins", link: "/directory-structure/plugins" },
           { text: "gitignore", link: "/directory-structure/gitignore" },
+          { text: "server", link: "/directory-structure/server" },
           { text: "tsconfig.json", link: "/directory-structure/tsconfig" },
         ],
       },
@@ -35,7 +43,8 @@ module.exports = {
         children: [
           { text: "Azure", link: "/deployment/azure" },
           { text: "PM2", link: "/deployment/pm2" },
-          { text: "Netlify", link: "/deployment/Netlify" }
+          { text: "Netlify", link: "/deployment/Netlify" },
+          { text: "Vercel", link: "/deployment/vercel" },
         ],
       },
     ],
