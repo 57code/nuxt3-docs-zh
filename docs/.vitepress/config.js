@@ -42,7 +42,8 @@ module.exports = {
         children: [
           { text: "Azure", link: "/deployment/azure" },
           { text: "PM2", link: "/deployment/pm2" },
-          { text: "Netlify", link: "/deployment/Netlify" }
+          { text: "Netlify", link: "/deployment/Netlify" },
+          { text: "Vercel", link: "/deployment/vercel" },
         ],
       },
     ],
