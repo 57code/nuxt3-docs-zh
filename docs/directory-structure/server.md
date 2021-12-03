@@ -14,7 +14,9 @@ Nuxt 将自动读取`~/server/api`目录中的任何文件，以创建 API 端�
 
 #### Hello world
 
-```server/api/hello.ts
+> *server/api/hello.ts*
+
+```ts
 export default (req, res) => 'Hello World'
 ```
 
@@ -22,7 +24,9 @@ http://localhost:3000/api/hello[上查看](http://localhost:3000/api/hello)结�
 
 #### 异步函数
 
-```server/api/async.ts
+> *server/api/async.ts*
+
+```ts
 export default async (req, res) => {
   await someAsyncFunction()
 
@@ -34,7 +38,9 @@ export default async (req, res) => {
 
 **示例：**使用 Node.js 样式
 
-```server/api/node.ts
+> *server/api/node.ts*
+
+```ts
 import type { IncomingMessage, ServerResponse } from 'http'
 
 export default async (req: IncomingMessage, res: ServerResponse) => {
