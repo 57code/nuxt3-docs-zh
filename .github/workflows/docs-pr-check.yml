@@ -5,7 +5,7 @@ name: docs PR check
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 # 一个 CI/CD 的工作流有许多 jobs 组成，比如最典型的 job 是 lint，test，build等，这里起名 build-and-deploy
 jobs:
