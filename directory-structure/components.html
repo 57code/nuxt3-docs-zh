@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/nuxt3-docs-zh/assets/style.019f39fc.css">
     <link rel="modulepreload" href="/nuxt3-docs-zh/assets/Home.21c8ea00.js">
     <link rel="modulepreload" href="/nuxt3-docs-zh/assets/app.510757aa.js">
-    <link rel="modulepreload" href="/nuxt3-docs-zh/assets/directory-structure_components.md.5d5548ba.lean.js">
+    <link rel="modulepreload" href="/nuxt3-docs-zh/assets/directory-structure_components.md.6a51db1f.lean.js">
     <link rel="modulepreload" href="/nuxt3-docs-zh/assets/app.510757aa.js">
     <meta name="twitter:title" content="components | Nuxt3中文文档">
     <meta property="og:title" content="components | Nuxt3中文文档">
@@ -17,65 +17,65 @@
     <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/nuxt3-docs-zh/" aria-label="Nuxt3中文文档, back to home" data-v-675d8756 data-v-4a583abe><!----> Nuxt3中文文档</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><!----></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><!----><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/">使用</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/usage/data-fetching">数据获取</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/usage/runtime-config">运行时配置</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/usage/nuxt-app">NuxtApp</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/usage/cookies">Cookies</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure">目录结构</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure/app-vue">app.vue</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure/composables">composables</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item active" href="/nuxt3-docs-zh/directory-structure/components">components</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#组件命名">组件命名</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#动态导入">动态导入</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#clientonly-组件">&lt;ClientOnly&gt; 组件</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#库作者">库作者</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure/layouts">layouts</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure/pages">pages</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure/plugins">plugins</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure/gitignore">gitignore</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/directory-structure/tsconfig">tsconfig.json</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/deployment">部署</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/deployment/azure">Azure</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/deployment/pm2">PM2</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/nuxt3-docs-zh/deployment/Netlify">Netlify</a><!----></li></ul></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h1 id="组件目录" tabindex="-1">组件目录 <a class="header-anchor" href="#组件目录" aria-hidden="true">#</a></h1><p><code>components/</code> 目录是存放可导入到你的页面中的 Vue 组件或其他组件 (<a href="https://v3.cn.vuejs.org/guide/component-basics.html" target="_blank" rel="noopener noreferrer">了解更多</a>)。</p><p>Nuxt 会自动导入 <code>components/</code> 目录下任何组件 (以及你可能正在使用的任何模块注册的组件)。</p><div class="language-bash"><pre><code><span class="token operator">|</span> components/
 --<span class="token operator">|</span> TheHeader.vue
 --<span class="token operator">|</span> TheFooter.vue
-</code></pre></div><div class="language-html{}[layouts/default.vue]"><pre><code>&lt;template&gt;
-  &lt;div&gt;
-    &lt;TheHeader /&gt;
-    &lt;slot /&gt;
-    &lt;TheFooter /&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+</code></pre></div><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TheHeader</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TheFooter</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><h2 id="组件命名" tabindex="-1">组件命名 <a class="header-anchor" href="#组件命名" aria-hidden="true">#</a></h2><p>如你的嵌套目录中有一个组件，例如：</p><div class="language-bash"><pre><code><span class="token operator">|</span> components/
 --<span class="token operator">|</span> base/
 ----<span class="token operator">|</span> foo/
 ------<span class="token operator">|</span> Button.vue
-</code></pre></div><p>... 然后组件的名称将基于自己的路径和文件名，并删除重复的段 (比如： an/an/Button.vue 注册名将会是 AnButton)。因此组件名会是：</p><div class="language-html"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BaseFooButton</span> <span class="token punctuation">/&gt;</span></span>
-</code></pre></div><div class="info custom-block"><p class="custom-block-title">提示：</p><p>为清楚起见，建议组件的文件名与其名称匹配。 (所以，在上面的例子中, 你可以将 <code>Button.vue</code> 重命名为 <code>BaseFooButton.vue</code>.)</p></div><h2 id="动态导入" tabindex="-1">动态导入 <a class="header-anchor" href="#动态导入" aria-hidden="true">#</a></h2><p>要动态导入一个组件 (也称为懒加载一个组件) 只需要在原组件名前加上 <code>Lazy</code> 前缀.</p><div class="language-html{}[layouts/default.vue]"><pre><code>&lt;template&gt;
-  &lt;div&gt;
-    &lt;TheHeader /&gt;
-    &lt;slot /&gt;
-    &lt;LazyTheFooter /&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-</code></pre></div><p>当该组件不是总被需要，这一点特别重要。通过使用 <code>Lazy</code> 前缀，你可以在合适的时机，延迟加载组件代码，这有助于优化你的 JavaScript 包大小。</p><div class="language-html{}[pages/index.vue]"><pre><code>&lt;template&gt;
-  &lt;div&gt;
-    &lt;h1&gt;Mountains&lt;/h1&gt;
-    &lt;LazyMountainsList v-if=&quot;show&quot; /&gt;
-    &lt;button v-if=&quot;!show&quot; @click=&quot;show = true&quot;&gt;Show List&lt;/button&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+</code></pre></div><p>... 然后组件的名称将基于自己的路径和文件名，并删除重复的段 (比如： an/an/Button.vue 注册名将会是 AnButton)。因此组件名会是：</p><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BaseFooButton</span> <span class="token punctuation">/&gt;</span></span>
+</code></pre></div><div class="info custom-block"><p class="custom-block-title">提示：</p><p>为清楚起见，建议组件的文件名与其名称匹配。 (所以，在上面的例子中, 你可以将 <code>Button.vue</code> 重命名为 <code>BaseFooButton.vue</code>.)</p></div><h2 id="动态导入" tabindex="-1">动态导入 <a class="header-anchor" href="#动态导入" aria-hidden="true">#</a></h2><p>要动态导入一个组件 (也称为懒加载一个组件) 只需要在原组件名前加上 <code>Lazy</code> 前缀.</p><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TheHeader</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LazyTheFooter</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>当该组件不是总被需要，这一点特别重要。通过使用 <code>Lazy</code> 前缀，你可以在合适的时机，延迟加载组件代码，这有助于优化你的 JavaScript 包大小。</p><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Mountains<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LazyMountainsList</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>show<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>!show<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>show = true<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Show List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 
-&lt;script&gt;
-export default {
-  data() {
-    return {
-      show: false
-    }
-  }
-}
-&lt;/script&gt;
-</code></pre></div><h2 id="clientonly-组件" tabindex="-1"><code>&lt;ClientOnly&gt;</code> 组件 <a class="header-anchor" href="#clientonly-组件" aria-hidden="true">#</a></h2><p>Nuxt 提供了 <code>&lt;ClientOnly&gt;</code> 组件，是专门在客户端渲染组件的组件。只在客户端导入组件或在客户端插件中注册该组件。</p><div class="language-html{}[pages/example.vue]"><pre><code>&lt;template&gt;
-  &lt;div&gt;
-    &lt;Sidebar /&gt;
-    &lt;ClientOnly&gt;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      show<span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="clientonly-组件" tabindex="-1"><code>&lt;ClientOnly&gt;</code> 组件 <a class="header-anchor" href="#clientonly-组件" aria-hidden="true">#</a></h2><p>Nuxt 提供了 <code>&lt;ClientOnly&gt;</code> 组件，是专门在客户端渲染组件的组件。只在客户端导入组件或在客户端插件中注册该组件。</p><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Sidebar</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ClientOnly</span><span class="token punctuation">&gt;</span></span>
 
-      &lt;!-- 该组件只会在客户端渲染 --&gt;
-      &lt;Comments /&gt;
-    &lt;/ClientOnly&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-</code></pre></div><p>使用一个插槽，如： fallback ，直到 <code>&lt;ClientOnly&gt;</code> 组件在客户端挂载。</p><div class="language-html{}[pages/example.vue]"><pre><code>&lt;template&gt;
-  &lt;div&gt;
-    &lt;Sidebar /&gt;
-    &lt;ClientOnly&gt;
-      &lt;!-- 该组件只会在客户端渲染 --&gt;
-      &lt;Comments /&gt;
-      &lt;template #fallback&gt;
-        &lt;!-- 这将在服务器端渲染 --&gt;
-        &lt;p&gt;Loading comments...&lt;/p&gt;
-      &lt;/template&gt;
-    &lt;/ClientOnly&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+      <span class="token comment">&lt;!-- 该组件只会在客户端渲染 --&gt;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Comments</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ClientOnly</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>使用一个插槽，如： fallback ，直到 <code>&lt;ClientOnly&gt;</code> 组件在客户端挂载。</p><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Sidebar</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ClientOnly</span><span class="token punctuation">&gt;</span></span>
+      <span class="token comment">&lt;!-- 该组件只会在客户端渲染 --&gt;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Comments</span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#fallback</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- 这将在服务器端渲染 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Loading comments...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ClientOnly</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><h2 id="库作者" tabindex="-1">库作者 <a class="header-anchor" href="#库作者" aria-hidden="true">#</a></h2><p>制作具有自动摇树优化和组件注册功能的 Vue 组件库非常简单 ✨</p><p>你可以使用 <code>components:dirs</code> 钩子，轻松扩展目录列表，而无需用户在 Nuxt 模块中进行配置。</p><p>想象一个像这样的目录结构：</p><div class="language-bash"><pre><code><span class="token operator">|</span> node_modules/
 ---<span class="token operator">|</span> awesome-ui/
 ------<span class="token operator">|</span> components/
@@ -109,7 +109,7 @@ export default {
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><p>它仅在使用时自动导入组件，并且在更新你在 <code>node_modules/awesome-ui/components/</code> 的组件时支持热更新。</p></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-fb8d84c6><div class="edit" data-v-fb8d84c6><div class="edit-link" data-v-fb8d84c6 data-v-1ed99556><!----></div></div><div class="updated" data-v-fb8d84c6><!----></div></footer><div class="next-and-prev-link" data-v-7eddb2c4 data-v-38ede35f><div class="container" data-v-38ede35f><div class="prev" data-v-38ede35f><a class="link" href="/nuxt3-docs-zh/directory-structure/composables" data-v-38ede35f><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-38ede35f><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-38ede35f>composables</span></a></div><div class="next" data-v-38ede35f><a class="link" href="/nuxt3-docs-zh/directory-structure/layouts" data-v-38ede35f><span class="text" data-v-38ede35f>layouts</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-next" data-v-38ede35f><path d="M19.9,12.4c0.1-0.2,0.1-0.5,0-0.8c-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l5.3,5.3H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h11.6l-5.3,5.3c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7-7C19.8,12.6,19.9,12.5,19.9,12.4z"></path></svg></a></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"deployment_netlify.md\":\"9e1564f5\",\"deployment_azure.md\":\"a782cef9\",\"deployment_pm2.md\":\"d20e51f4\",\"directory-structure_app-vue.md\":\"7ff0301d\",\"directory-structure_components.md\":\"5d5548ba\",\"directory-structure_composables.md\":\"d4a360d3\",\"directory-structure_gitignore.md\":\"76852074\",\"directory-structure_layouts.md\":\"3a0e373a\",\"directory-structure_pages.md\":\"d2074aff\",\"directory-structure_plugins.md\":\"30045c02\",\"directory-structure_server.md\":\"3de83008\",\"directory-structure_tsconfig.md\":\"f47059ef\",\"index.md\":\"fcdc7a6a\",\"usage_cookies.md\":\"7381f0a7\",\"usage_data-fetching.md\":\"8bac1861\",\"usage_meta.md\":\"057bd2ec\",\"usage_nuxt-app.md\":\"0ee547e1\",\"usage_runtime-config.md\":\"02e5993c\"}")</script>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"deployment_netlify.md\":\"d6298b5d\",\"deployment_azure.md\":\"b546546f\",\"deployment_pm2.md\":\"77a3112e\",\"directory-structure_app-vue.md\":\"2a19a418\",\"directory-structure_components.md\":\"6a51db1f\",\"directory-structure_composables.md\":\"ef9924fe\",\"directory-structure_gitignore.md\":\"a2078622\",\"directory-structure_layouts.md\":\"6d282ff4\",\"directory-structure_pages.md\":\"7703bcfa\",\"directory-structure_plugins.md\":\"c40eedc4\",\"directory-structure_server.md\":\"9eef6be2\",\"directory-structure_tsconfig.md\":\"4ef91464\",\"index.md\":\"123f33ae\",\"usage_cookies.md\":\"ec644c80\",\"usage_data-fetching.md\":\"bbd1ef42\",\"usage_meta.md\":\"287f9113\",\"usage_nuxt-app.md\":\"e9b82400\",\"usage_runtime-config.md\":\"657d8e64\"}")</script>
     <script type="module" async src="/nuxt3-docs-zh/assets/app.510757aa.js"></script>
     
   </body>
