@@ -25,6 +25,7 @@ module.exports = {
           { text: "pages", link: "/directory-structure/pages" },
           { text: "plugins", link: "/directory-structure/plugins" },
           { text: "gitignore", link: "/directory-structure/gitignore" },
+          { text: "server", link: "/directory-structure/server" },
           { text: "tsconfig.json", link: "/directory-structure/tsconfig" },
         ],
       },
