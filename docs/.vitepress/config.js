@@ -5,6 +5,13 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
+        text: "快速入门",
+        link: "/getting-started",
+        children: [
+          { text: "安装", link: "/getting-started/installation" },
+        ],
+      },
+      {
         text: "使用",
         link: "/",
         children: [
