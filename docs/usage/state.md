@@ -70,7 +70,7 @@ const conuter = useState('counter', () => Math.round(Math.random() * 1000))
 
 ### 共享状态
 
-通过使用[自动导入 composables](/composables)，我们可以定义全局的安全类型状态并且在整个应用中导入。
+通过使用[自动导入 composables](/directory-structure/composables)，我们可以定义全局的安全类型状态并且在整个应用中导入。
 
 ```typescript
 // composables/states.ts
