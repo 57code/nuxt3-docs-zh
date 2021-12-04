@@ -5,6 +5,7 @@ module.exports = {
   head: [["link", { rel: "icon", href: "/nuxt3-docs-zh/icon.png" }]],
   themeConfig: {
     repo: "57code/nuxt3-docs-zh",
+    docsBranch: "master/docs",
     logo: "/logo.svg",
     nav: [
       { text: "学习指南", link: "/getting-started/installation" },
