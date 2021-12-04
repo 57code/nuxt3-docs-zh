@@ -2,18 +2,31 @@ module.exports = {
   title: "Nuxt3中文文档",
   description: "由Nuxt3对赌学习群产出的中文文档",
   base: "/nuxt3-docs-zh/",
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
+  ],
   themeConfig: {
+    repo: '57code/nuxt3-docs-zh',
+    logo: '/logo.svg',
+    nav:[
+      { text: '学习指南', link: '/getting-started/installation' },
+      { text: 'Modules', link: 'https://modules.nuxtjs.org/?version=3.x' },
+      { text: '在线编辑', link: 'https://stackblitz.com/edit/nuxt-starter-ndtolw' },
+      {
+          text: '更新日志',
+          link:
+            'https://github.com/57code/nuxt3-docs-zh'
+      }
+    ],
     sidebar: [
       {
         text: "快速入门",
-        link: "/getting-started",
         children: [
           { text: "安装", link: "/getting-started/installation" },
         ],
       },
       {
         text: "使用",
-        link: "/",
         children: [
           { text: "数据获取", link: "/usage/data-fetching" },
           { text: "State", link: "/usage/state" },
@@ -24,7 +37,6 @@ module.exports = {
       },
       {
         text: "目录结构",
-        link: "/directory-structure",
         children: [
           { text: "app.vue", link: "/directory-structure/app-vue" },
           { text: "composables", link: "/directory-structure/composables" },
@@ -39,7 +51,6 @@ module.exports = {
       },
       {
         text: "部署",
-        link: "/deployment",
         children: [
           { text: "Azure", link: "/deployment/azure" },
           { text: "PM2", link: "/deployment/pm2" },
@@ -48,5 +59,8 @@ module.exports = {
         ],
       },
     ],
+    editLinks: true,
+    editLinkText: '在 GitHub 上编辑此页',
+    lastUpdated: '上次更新',
   },
 }
