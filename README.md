@@ -1,6 +1,6 @@
 # Nuxt3中文文档
-[Github Page](https://57code.github.io/nuxt3-docs-zh/)
-[Nuxt3中文网](http://nuxt3.cn)，建设中...
+- [Github Page](https://57code.github.io/nuxt3-docs-zh/)
+- [Nuxt3中文网](http://nuxt3.cn)，建设中...
 
 ## 项目背景
 [Nuxt3官网](http://v3.nuxtjs.org/docs/usage/data-fetching/)现在太难用了：
