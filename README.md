@@ -39,3 +39,4 @@ yarn docs:dev
 本次翻译活动有很多村长的朋友们加入，感谢你们的付出：
 [迷心whylost](https://github.com/whylost)
 [拜托啦俊酱丶](https://github.com/jerry-lllman)
+[williamhatch](https://github.com/williamhatch)
