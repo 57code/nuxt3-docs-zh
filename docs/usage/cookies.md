@@ -51,7 +51,7 @@ const counter = useCookie('counter', {
 
 ## [配置项](https://v3.nuxtjs.org/docs/usage/cookies#options)
 
-组合式Cookie接受几个配置项来让你修改cookie的行为。
+Cookie接受几个配置项组合修改cookie的行为。
 
 大部分配置项是直接引用的 [cookie ](https://github.com/jshttp/cookie)包中的内容。
 
