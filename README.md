@@ -8,7 +8,7 @@
 - 没有学习路径
 - 速度慢
 
-我第一时间想到做一个[视频教程](https://space.bilibili.com/480140591/channel/collectiondetail?sid=34039)，翻译一版文档，设计一个学习路径帮助大家学习！如果有帮到您，请给本项目点个star！
+我第一时间想到做一个[视频教程](https://space.bilibili.com/480140591/channel/collectiondetail?sid=34039)，翻译一版文档，设计一个学习路径，建设一个Nuxt3中文网帮助大家学习！如果有帮到您，请给本项目点个star！
 ## 关注我
 我是村长，是一名程序员、UP主、讲师，欢迎关注我：
 - 公众号「村长学前端」
@@ -31,7 +31,7 @@ yarn docs:dev
 ```
 
 ## Nuxt3视频教程
-[视频教程](https://space.bilibili.com/480140591/channel/collectiondetail?sid=34039)
+[Nuxt3从入门到实战](https://space.bilibili.com/480140591/channel/collectiondetail?sid=34039)
 ，欢迎小伙们快乐学习的同时动动小手，三连+关注+分享！
 
 
