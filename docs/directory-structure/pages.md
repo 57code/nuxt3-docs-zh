@@ -101,7 +101,7 @@ Nuxt将为我们生成下面的路由
 <template>
   <div>
     <h1>这里是 parent component</h1>
-    <NuxtChild :foobar="123" />
+    <NuxtChild />
   </div>
 </template>
 ```
