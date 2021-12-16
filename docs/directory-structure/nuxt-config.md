@@ -43,7 +43,7 @@ export default defineNuxtConfig({
 
 <!-- prettier-ignore-start -->
 ```js
-import { resolve } from 'pathe'
+import { resolve } from 'path'
 export default {
   alias: {
     'images': resolve(__dirname, './assets/images'),
