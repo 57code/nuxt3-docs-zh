@@ -1,5 +1,6 @@
 # Nuxt3中文文档
 - [Github Page](https://57code.github.io/nuxt3-docs-zh/)
+- [Gitee Page](https://57code.gitee.io/nuxt3-docs-zh/)
 - [Nuxt3中文网](http://nuxt3.cn)，建设中...
 
 ## 项目背景
@@ -39,3 +40,4 @@ yarn docs:dev
 本次翻译活动有很多村长的朋友们加入，感谢你们的付出：
 [迷心whylost](https://github.com/whylost)
 [拜托啦俊酱丶](https://github.com/jerry-lllman)
+[williamhatch](https://github.com/williamhatch)

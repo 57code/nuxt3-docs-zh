@@ -1,7 +1,7 @@
 # 路由页面 [pages](https://v3.nuxtjs.org/docs/directory-structure/pages)
 
 > pages 文件夹目录是可选的，也就是说你可以只通过app.vue 来完成你的项目，
-> 但我们没有pages文件夹目录时，vue-router是不会别加载的，这样可以减小包的大小
+> 但我们没有pages文件夹目录时，vue-router是不会被加载的，这样可以减小包的大小
 
 当我们创建了pages文件夹目录后，Nuxt会自动集成[vue-router](https://next.router.vuejs.org/zh/)，结合pages目录下的文件(夹)名来构建我们的项目
 
@@ -11,7 +11,7 @@
 
 如果把任何东西放在方括号`[]`中，它将被转换为一个[**dynamic router**](https://next.router.vuejs.org/zh/guide/essentials/dynamic-matching.html)参数。您可以在一个文件名或目录中混合和匹配多个参数，甚至是非动态文本。
 
-如果需要一个全捕获路由，可以使用一个名为`[…slug].vue`的文件来创建它。这将匹配该路径下的所有路由，因此它不支持任何非动态文本。
+如果需要一个通配路由，可以使用一个名为`[…slug].vue`的文件来创建它。这将匹配该路径下的所有路由，因此它不支持任何非动态文本。
 
 #### 示例 :chestnut:
 
@@ -101,7 +101,7 @@ Nuxt将为我们生成下面的路由
 <template>
   <div>
     <h1>这里是 parent component</h1>
-    <NuxtChild :foobar="123" />
+    <NuxtChild />
   </div>
 </template>
 ```
