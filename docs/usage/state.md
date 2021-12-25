@@ -43,7 +43,7 @@ useState<T>(key: string, init?: () => T): Ref<T>
 
 ```vue
 <script setup>
-const conuter = useState('counter', () => Math.round(Math.random() * 1000))
+const counter = useState('counter', () => Math.round(Math.random() * 1000))
 </script>
 
 <template>
