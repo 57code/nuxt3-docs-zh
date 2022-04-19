@@ -63,7 +63,7 @@ const counter = useCookie('counter', {
 
 💡**注意:** cookie的存储模型规定如果同时设置了`expires`和`maxAge`,以`maxAge`优先。但是并不是所有的客户端都遵守这一规定，所以同时设置时应该让他们都指向相同的日期和时间！
 
-如果都不社会`expires`和`maxAge`，那么cookie将仅用于会话，当用户关闭浏览器的时候被移除。
+如果都不设置`expires`和`maxAge`，那么cookie将仅用于会话，当用户关闭浏览器的时候被移除。
 
 ### [`httpOnly`](https://v3.nuxtjs.org/docs/usage/cookies#httponly)
 
